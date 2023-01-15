@@ -1,0 +1,75 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-image: url('../images/winter-wallpaper.jpg');
+  background-size: 100%;
+}
+
+.filler {
+  height: 15%;
+  width: 100%;
+}
+
+.clock-img-size {
+  width: 60%;
+  height: 40%;
+}
+
+.mainForm {
+  font-family: 'PT Sans', sans-serif;
+  border-radius: 30px;
+  background-color: white;
+  width: 30%;
+  height: 70%;
+}
+
+.button_size {
+  display: inline-block;
+  width: 20%;
+}
+
+span {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 125px;
+}
+
+button {
+  position: relative;
+  height: 60px;
+  width: 85%;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #637F97;
+  border: 2px #637F97 solid;
+  border-radius: 30px;
+  outline: 0;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transitions: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.fill:hover {
+  color: whitesmoke;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #637F97;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+  top: 0;
+}

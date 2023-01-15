@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="./css/style4.css" type="text/css" >
+    <title>Login Page</title>
+  </head>
+  <body>
+    
+    <div>
+      <h1> Login </h1>
+    </div>
+
+    <div>
+      <img class="line_position" src=".\images\Blue-Line.png" alt="">
+    </div>
+
+    <div>
+      <span onclick="openNav()">
+        <div class="topleft">
+          <button class="transparent button_class2">
+            <img class="icon-nav"
+            src=".\images\green-clock.jpg"
+            alt="Menu Flaticon/Icon">
+          </button>
+        </div>
+      </span>
+
+      <span onclick="openNav()">
+        <div class="topleft2">
+          <button class="transparent button_class2">
+            <img class="icon-nav2"
+            src=".\images\green-house-icon.jpg"
+            alt="Menu Flaticon/Icon">
+          </button>
+        </div>
+      </span>
+    </div>
+
+    <div>
+      <span onclick="openNav()">
+        <div class="topleft3">
+          <button class="transparent button_class2">
+            <a class="button_variation" href="./Time Management.html">↤</a>
+          </button>
+        </div>
+      </span>
+    </div>
+
+    <div class="form_position">
+      <form method="get" action="process.php">
+         <fieldset>
+           <p>
+             <label class="white"> Username: </label>
+             <input class="input_variation" type="text" name="username" size="15" maxlength="30"/>
+           </p>
+           <p>
+             <label class="white">Password: </label>
+             <input class="input_variation" type="text" name="password" size="15" maxlength="30"/>
+           </p>
+           <p>
+         </fieldset>
+       </form>
+       <div class="sentence_position">
+         <button onclick="document.getElementById('id01').style.display='block'"
+         class="no_underline white transparent" type="button" name="SIGN UP">
+             <h2> <a> Don't have an account? Sign Up!</a> </h2></button>
+           <div id="id01" class="modal">
+             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><a href="./Login.html">&times;</a></span>
+             <form class="modal-content" action="/action_page.php">
+               <div class="container">
+                 <p class="white">Please fill in this form to create an account.</p>
+                 <hr>
+                 <label for="email"><b>Email</b></label>
+                 <input type="text" name="email" required>
+
+                 <label for="psw"><b>Password</b></label>
+                 <input type="password" name="psw" required>
+
+                 <label for="psw-repeat"><b>Repeat Password</b></label>
+                 <input type="password" name="psw-repeat" required>
+
+                 <label>
+                   <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                 </label>
+
+                 <p class="white">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                 <div class="clearfix">
+                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                   <button type="submit" class="signupbtn">Sign Up</button>
+                 </div>
+
+
+               </div>
+             </form>
+
+           </div>
+          </div>
+
+         <script>
+         // Get the modal
+         var modal = document.getElementById('id01');
+
+         // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+           if (event.target == modal) {
+             modal.style.display = "none";
+           }
+         }
+         </script>
+     </div>
+
+     <button class="button_position" type="button" name="Login">
+       <a class="no_underline" href=".\Time Management.html">
+         Login</a>
+     </button>
+
+  </body>
+</html>

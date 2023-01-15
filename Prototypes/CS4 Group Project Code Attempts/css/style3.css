@@ -1,0 +1,390 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, teal, green);
+  box-sizing: border-box;
+}
+
+.element {
+  padding: 0;
+  margin-left: 150px;
+  color: white;
+}
+
+.table1 {
+  border: 0;
+  width : 46%;
+  cellspacing: 0;
+  color: white;
+}
+
+.table2 {
+  border: 0;
+  cellpadding: 15;
+  cellspacing: 0;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: gold;
+}
+
+.icon-nav {
+    display: block;
+    cursor: pointer;
+    height: 180%;
+    width: 180%;
+}
+
+.icon-nav2 {
+    display: block;
+    cursor: pointer;
+    height: 180%;
+    width: 220%;
+}
+
+.button_class2 {
+    box-sizing: border-box;
+    transition: all 250ms ease-out;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    text-transform: none;
+    overflow: visible;
+    height: 1.75rem;
+    width: 1.95rem;
+}
+
+.transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.topleft {
+    position: absolute;
+    top: 19px;
+    left: 28px;
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+}
+
+.topleft2 {
+    position: absolute;
+    top: 19px;
+    left: 110px;
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+}
+
+h2 {
+  position: absolute;
+  top: 100px;
+  left: 620px;
+  font-size: 30px;
+  color: gold;
+}
+
+h1 {
+  position: absolute;
+  top: 130px;
+  left: 400px;
+  font-size: 90px;
+  color: white;
+}
+
+.button_position {
+    position: absolute;
+    top: 540px;
+    left: 600px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia,serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background-color: transparent;
+    border: 1px solid black;
+    overflow: visible;
+    box-sizing: border-box;
+    transition: all 250ms ease-out;
+    line-height: 1;
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+    background-image: linear-gradient(180deg, teal, green);
+}
+
+.button_position2 {
+    position: absolute;
+    top: 540px;
+    left: 810px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia,serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background-color: transparent;
+    border: 1px solid black;
+    overflow: visible;
+    box-sizing: border-box;
+    transition: all 250ms ease-out;
+    line-height: 1;
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+    background-image: linear-gradient(180deg, teal, green);
+}
+
+.no_underline {
+  text-decoration: none;
+}
+
+.button_position3 {
+    position: absolute;
+    top: 19px;
+    left: 1300px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia,serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background-image: linear-gradient(180deg, teal, green);
+    border: 1px solid black;
+    overflow: visible;
+    box-sizing: border-box;
+    transition: all 250ms ease-out;
+    line-height: 1;
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.button_position3:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=placeholder] {
+  width: 96%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-color: black;
+  background-image: linear-gradient(90deg, teal, green);
+  color: white;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline-color: white;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.signupbtn {
+  background-color: teal;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  height: 100%;
+  color: white;
+}
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-image: linear-gradient(90deg, teal, green);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+label {
+  color: white;
+}
+
+.white {
+  color: white;
+}
+
+button[type=submit], button[type=button] {
+  height: 50px;
+  border-color: black;
+}
+
+.left, .right, .badge {
+  cursor: grab;
+  color: black;
+}
+
+.content{
+  margin: 0;
+  width: 1490px;
+  height: 150px;
+}
+
+.badge {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 10px;
+}
+
+.badge:hover {
+  background-color: green;
+  margin: 10px;
+}
+
+.border {
+    border: 4px solid black!important;
+    float: bottom;
+}
+
+.left {
+    cursor: pointer;
+    float: left!important;
+}
+
+.right {
+  cursor: pointer;
+  float: right!important;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.top {
+  padding-bottom: 300px;
+}
+
+.large {
+    font-size: 18px!important;
+}
+
+.section, .code {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+}
+
+.container, .panel {
+    padding: 0.01em 16px;
+}
+
+.display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+}
+
+div {
+  display: block;
+}
+
+.mySlides {
+  height: 800px;
+  display: none;
+  border-style: none;
+  opacity: 1;
+}
+
+.slideshow_position {
+  position: absolute;
+  top: 370px;
+  left: 40px;
+}
+
+.image_size {
+  position: absolute;
+  top: -50px;
+  left: 360px;
+  width: 815px;
+  height: 200px;
+}

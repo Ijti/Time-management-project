@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="lolkittens">
+    <meta http-equiv="content-type" content="text/html">
+    <title>timer</title>
+    <script type="text/javascript">
+      var timerVar = setInterval(countTimer, 1000);
+      var totalSeconds = 0;
+      function countTimer() {
+        ++totalSeconds;
+        var hour = Math.floor(totalSeconds/3600);
+        var minute = Math.floor((totalSeconds-hour*3600)/60);
+        var seconds = totalSeconds-(hour*3600+minute*60);
+        document.getElementById("timer").innerHTML=hour+":"+minute+":"+seconds;
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+     <div id="timer" style="font-size:70px; color:red; font-weight:bold;">
+
+     </div>
+
+     <div id="stop_timer" onclick="clearInterval(timerVar)">
+       <button>Stop time</button>
+     </div>
+
+     <div id="reset" onclick="totalSeconds = 0" interval="null">
+       <button>Reset</button>
+     </div>
+
+    </center>
+  </body>
+</html>

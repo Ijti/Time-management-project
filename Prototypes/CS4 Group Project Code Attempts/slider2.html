@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="./css/stylesheet1.css" type="text/css" >
+    <title>CS4</title>
+  </head>
+  <body>
+    <!--Header(start)-->
+    <table id="header" class="table 1 element">
+
+        <tr>
+            <td>
+                <table class="table2" cellpadding= "15">
+                    <tr>
+                        <td>
+
+
+                        </td>
+
+                        <td>
+                            <font face="Comic sans MS" size="4" >
+                                <b>GROUP CS4 :)</b>
+                            </font>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href="#">
+                                <font face="Verdana" size="4" >
+                                    Home
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href=".\Time Management.html">
+                                <font face="Verdana" size="4">
+                                    Time Management
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href="#">
+                                <font face="Verdana" size="4">
+                                    Contact
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                      </tr>
+                  </table>
+              </td>
+          </tr>
+      </table>
+      <!--Header(end)-->
+
+      <h1> WELCOME TO OUR WEBPAGE! </h1>
+      <p>
+        We are Group CS4. (insert group paragraph here, this isn't our <br>
+        actual paragraph). We have yet to decide what to write. <br>
+        Please enjoy this random paragraph from Wikipedia: <br>
+        A group is a set of things or a number of individuals who have regular <br>
+        contact and frequent interaction. Examples of Groups? <br>
+        A family of people, A herd of animals, A class of students, A sports <br>
+        team, Ethnic group, The apples on a tree, The hats in a box, Britain, <br>
+        China, France, Russia, and the United States of America are in the <br>
+        United Nations Security Council. Carbon, hydrogen, nitrogen, oxygen. <br>
+      </p>
+
+      <div class="slideshow_position">
+      <!-- Slideshows: https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+        <a href=".\Adnan.html"><img class="mySlides slideshow_position" src=".\images\adnan_logo-modified.png"alt="Adnan"></a>
+        <a href=".\Adnan.html"><img class="mySlides" src=".\images\sameer_logo-modified.png" alt="Sameer"></a>
+        <a href=".\Adnan.html"><img class="mySlides" src=".\images\ijtihad_logo-modified.png" alt="Ijtihad"></a>
+        <a href=".\Adnan.html"><img class="mySlides" src=".\images\qays_logo-modified.png" alt="Qays"></a>
+        <a href=".\Adnan.html"><img class="mySlides" src=".\images\saif_logo-modified.png" alt="Saif"></a>
+        <a href=".\Adnan.html"><img class="mySlides" src=".\images\obaid_logo-modified.png" alt="Obaid"></a>
+      </div>
+
+      <div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=12V_ArfXcltBhEslDigaMS4fV_WjEGz4&ehbc=2E312F"></iframe>
+      </div>
+
+      <div class="down_arrow">
+        <p> * Map Of Our Schools :o  ↓ * </p>
+      </div>
+
+      <div class="pins">
+        <p> * Click On The Pins :D ! * </p>
+        <p> * Zoom In :) ! * </p>
+      </div>
+
+  </body>
+  <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);
+      }
+
+    </script>
+</html>

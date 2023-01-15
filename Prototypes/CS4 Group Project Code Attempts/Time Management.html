@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="./css/style3.css" type="text/css" >
+    <title>Time Management</title>
+  </head>
+  <body>
+    <!--Header(start)-->
+    <table id="header" class="table 1 element">
+
+        <tr>
+            <td>
+                <table class="table2" cellpadding= "15">
+                    <tr>
+                        <td>
+
+
+                        </td>
+
+                        <td>
+                            <a href="./index.html">
+                                <font face="Verdana" size="6" >
+                                    Home
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href="#">
+                                <font face="Verdana" size="6">
+                                    Time Management
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href=".\index.html">
+                                <font face="Verdana" size="6">
+                                    Profiles
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+                            <a href="#">
+                                <font face="Verdana" size="6">
+                                    Contact
+                                </font>
+                            </a>
+                        </td>
+
+                        <td>
+                            |
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td>
+                            <a href=".\Login.html">
+                                <font face="Verdana" size="6">
+                                    Login
+                                </font>
+                            </a>
+                        </td>
+
+
+                      </tr>
+                  </table>
+              </td>
+          </tr>
+      </table>
+      <!--Header(end)-->
+
+      <span onclick="openNav()">
+        <div class="topleft">
+          <button class="transparent button_class2">
+            <img class="icon-nav"
+            src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/icon-nav-open-white.svg"
+            alt="Menu Flaticon/Icon">
+          </button>
+        </div>
+      </span>
+
+      <span onclick="openNav()">
+        <div class="topleft2">
+          <button class="transparent button_class2">
+            <img class="icon-nav2"
+            src=".\images\green-house-icon.jpg"
+            alt="Menu Flaticon/Icon">
+          </button>
+        </div>
+      </span>
+
+      <h2> Time Management Software </h2>
+      <h1> Pomodoro Perfection </h1>
+
+      <button class="button_position" type="button" name="START PLAN">
+        <a class="no_underline" href="">
+          Start Plan
+        </a>
+      </button>
+
+      <button class="button_position2" type="button" name="QUESTIONS?">
+        <a class="no_underline" href="">
+          Questions?
+        </a>
+      </button>
+
+      <button onclick="document.getElementById('id01').style.display='block'"
+      class="button_position3 no_underline white" type="button" name="SIGN UP">
+          Sign Up</button>
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><a href="./Time Management.html">&times;</a></span>
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+              <p class="white">Please fill in this form to create an account.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" name="psw" required>
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" name="psw-repeat" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+
+              <p class="white">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" onclick="return func()" class="signupbtn">Sign Up</button>
+              </div>
+
+
+            </div>
+          </form>
+
+        </div>
+
+        <div class="content display-container slideshow_position">
+          <img class="mySlides image_size" src=".\images\quote-1.png">
+          <img class="mySlides" src=".\images\Slideshow_Food\Second_Food.jpg">
+          <img class="mySlides" src=".\images\Slideshow_Food\Third_Food.jpg">
+          <img class="mySlides" src=".\images\Slideshow_Food\Fourth_Food.jpg">
+          <img class="mySlides" src=".\images\Slideshow_Food\Fifth_Food.jpg">
+          <img class="mySlides" src=".\images\Slideshow_Food\Sixth_Food.jpg">
+          <img class="mySlides" src=".\images\Slideshow_Food\Seventh_Food.jpg">
+          <img class="mySlides" src=".\images\Slideshow_Food\Eighth_Food.jpg">
+          <div class="center container section large text-white display-bottommiddle">
+            <span class="badge demo border transparent hover-white" onclick="currentDiv(1)"></span>
+            <span class="badge demo border transparent hover-white" onclick="currentDiv(2)"></span>
+            <span class="badge demo border transparent hover-white" onclick="currentDiv(3)"></span>
+            <span class="badge demo border transparent hover-white" onclick="currentDiv(4)"></span>
+            <span class="badge demo border transparent hover-white" onclick="currentDiv(5)"></span>
+            <span class="badge demo border transparent hover-white" onclick="currentDiv(6)"></span>
+            <span class="badge demo border transparent hover-white" onclick="currentDiv(7)"></span>
+          </div>
+        </div>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        function func() {
+          window.open("\Login.html");
+        }
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" white", "");
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " white";
+        }
+
+        </script>
+
+  </body>
+</html>

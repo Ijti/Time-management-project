@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="./css/style5.css" type="text/css" >
+    <title>Custom Timer</title>
+
+  </head>
+  <body>
+    <center>
+        <div class="filler mainForm">
+            <img class="clock-img-size" src=".\images\timer.jpg">
+            <br>
+            <span id="countdown">60</span>
+            <span id="plural">s</span>
+
+            <br><br><br>
+
+            <div class="button_size">
+              <button id="startButton" name="startButton" class="fill" onclick="startTimer()">START</button><br><br>
+              <button id="addFive" name="addFive" class="fill" onclick="addTime()">+5</button><br><br>
+            </div>
+
+            <div class="button_size">
+               <button id="endButton" name="endButton" class="fill" onclick="endTimer()">END</button><br><br>
+               <button id="minusFive" name="minusFive" class="fill" onclick="minusTime()">-5</button><br><br>
+            </div>
+
+        </div>
+    </center>
+  </body>
+  <script type="text/javascript">
+    var seconds = document.getElementbyId("countdown").textContent;
+    var countdown;
+
+    function addTime() {
+      seconds = seconds + 5;
+      document.getElementbyId("countdown").innerHTML = seconds;
+    }
+
+    function minusTime() {
+      seconds = seconds - 5;
+      document.getElementById('countdown').innerHTML = seconds;
+    }
+
+    function startTimer() {
+      countdown = setInterval(function() {
+          seconds--;
+          (seconds == 1) ? document.getElementById('plural').textContent = "" : document.getElementbyId("plural").textContent = "s";
+          document.getElementById("countdown").textContent = seconds;
+          if(seconds <= 0) clearInterval(countdown);
+      }, 1000);
+    }
+
+    function endTimer() {
+      clearInterval(countdown);
+      seconds = 60;
+      document.getElementById("countdown").innerHTML = "60";
+    }
+
+  </script>
+
+</html>

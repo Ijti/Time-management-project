@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <div id="js_timer">
+      <div id="timer">
+        00:00
+      </div>
+      <button onclick="pause()">pause</button>
+    </div>
+  </body>
+  <script>
+    var timer;
+    var ele = document.getElementById('timer');
+
+    (function (){
+      var sec = 0;
+      timer = setInterval(()=>{
+        ele.innerHTML = '00:'+sec;
+        sec ++;
+      }, 1000) // each 1 second
+    })()
+
+    function pause() {
+      clearInterval(timer);
+    }
+  </script>
+</html>
